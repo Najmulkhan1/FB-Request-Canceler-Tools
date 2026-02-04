@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 200px; padding: 15px; font-family: sans-serif; text-align: center; }
+    h4 { margin-top: 0; color: #1877f2; }
+    button { width: 100%; padding: 10px; margin: 5px 0; cursor: pointer; border-radius: 5px; border: none; font-weight: bold; }
+    #startBtn { background: #28a745; color: white; }
+    #stopBtn { background: #dc3545; color: white; }
+    #clearBtn { background: #6c757d; color: white; }
+    .info { font-size: 13px; margin-top: 10px; padding: 8px; background: #f0f2f5; border-radius: 5px; }
+    #count { font-weight: bold; color: #1877f2; }
+  </style>
+</head>
+<body>
+  <h4>FB Request Cancel Tool</h4>
+  <button id="startBtn">Start Canceling</button>
+  <button id="stopBtn">Stop</button>
+  <button id="clearBtn">Clear Count</button>
+  <div class="info">
+    Status: <span id="status">Idle</span><br>
+    Canceled: <span id="count">0</span>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
